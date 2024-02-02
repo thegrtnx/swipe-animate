@@ -1,0 +1,32 @@
+{
+	"name": "swipe-animate",
+	"version": "1.1.0",
+	"description": "Text Swipe Animation - a text animation library just like https://korahq.com/#move-money landing page.",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tsc",
+		"start": "npm run build && react-scripts start"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/thegrtnx/swipe-animate.git"
+	},
+	"author": "thegrtnx",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/thegrtnx/swipe-animate/issues"
+	},
+	"homepage": "https://simple-text-animation-gold.vercel.app",
+	"dependencies": {
+		"react": "^18.2.0",
+		"tailwindcss": "^3.4.1"
+	},
+	"devDependencies": {
+		"@types/react": "^18.2.51",
+		"@types/react-dom": "^18.2.18",
+		"framer-motion": "^11.0.3",
+		"typescript": "^5.3.3"
+	}
+}
