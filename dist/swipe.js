@@ -34,7 +34,7 @@ var Swipe = function (_a) {
         }, intervalDuration);
         return function () { return clearInterval(interval); };
     }, [intervalDuration, words.length]);
-    return (react_1.default.createElement("div", { className: "flex text-xl lg:text-5xl overflow-hidden transition-all duration-500" },
+    return (react_1.default.createElement("div", { className: "inline-flex overflow-hidden transition-all duration-500" },
         react_1.default.createElement("span", { className: "w-[100px]s w-auto text-xl text-center lg:w-60s lg:text-5xl text-green-500 transition-all duration-500" },
             react_1.default.createElement(framer_motion_1.AnimatePresence, { mode: "wait" },
                 react_1.default.createElement(framer_motion_1.motion.div, { key: activeIndex, initial: { y: "4rem" }, animate: { y: "0rem" }, exit: { y: "4rem" }, transition: { duration: 1 } },

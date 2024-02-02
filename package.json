@@ -1,6 +1,6 @@
 {
 	"name": "swipe-animate",
-	"version": "1.2.2",
+	"version": "1.2.4",
 	"description": "Text Swipe Animation - a text animation library just like https://korahq.com/#move-money landing page.",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
