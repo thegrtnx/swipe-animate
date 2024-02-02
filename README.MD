@@ -1,8 +1,8 @@
 # ✨ SWIPE-ANIMATE
 
-![stacked](https://raw.githubusercontent.com/thegrtnx/internet-speed-check/master/img/lightmode.png)
+This is a [typescript](https://www.typescriptlang.org/) project created by [`Abolade Greatness`](https://github.com/thegrtnx) and [`VickyJay`](https://github.com/Victorola-coder), helping you animate text in a swipe up animation just like the one below;
 
-This is a [typescript](https://www.typescriptlang.org/) project created by [`Abolade Greatness`](https://github.com/thegrtnx) and [`VickyJay`](https://github.com/Victorola-coder) helping you animate text in a swipe up manner just like the one below;
+![stacked](https://raw.githubusercontent.com/thegrtnx/internet-speed-check/master/vid/kora.gif)
 
 ## 🔧 Installation
 
