@@ -24,6 +24,13 @@
 	"bugs": {
 		"url": "https://github.com/thegrtnx/swipe-animate/issues"
 	},
+	"keywords": [
+		"text-animate",
+		"animation",
+		"swipe-animate",
+		"kora animation",
+		"swipe up"
+	],
 	"homepage": "https://simple-text-animation-gold.vercel.app",
 	"dependencies": {
 		"react": "^18.2.0",
