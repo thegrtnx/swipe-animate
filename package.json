@@ -14,6 +14,12 @@
 		"url": "git+https://github.com/thegrtnx/swipe-animate.git"
 	},
 	"author": "thegrtnx",
+	"contributors": [
+		{
+			"name": "Victor || VickyJay",
+			"url": "https://github.com/Victorola-coder"
+		}
+	],
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/thegrtnx/swipe-animate/issues"
