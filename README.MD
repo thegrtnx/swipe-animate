@@ -38,6 +38,8 @@ const page = () => {
 			<Swipe
 				words={arrayOfWords}
 				intervalDuration={4000}
+				textSize="3xl"
+				textColor="blue-500"
 			/>
 		</div>
 	);
@@ -62,6 +64,8 @@ const page = () => {
 			<Swipe
 				words={arrayOfWords}
 				intervalDuration={4000}
+				textSize="3xl"
+				textColor="blue-500"
 			/>
 		</div>
 	);
