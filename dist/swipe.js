@@ -26,7 +26,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importStar(require("react"));
 var framer_motion_1 = require("framer-motion");
 var Swipe = function (_a) {
-    var words = _a.words, intervalDuration = _a.intervalDuration, textSize = _a.textSize, textColors = _a.textColors;
+    var words = _a.words, intervalDuration = _a.intervalDuration, textSizes = _a.textSizes, textColors = _a.textColors;
     var _b = (0, react_1.useState)(0), activeIndex = _b[0], setActiveIndex = _b[1];
     (0, react_1.useEffect)(function () {
         var interval = setInterval(function () {
@@ -35,6 +35,8 @@ var Swipe = function (_a) {
         return function () { return clearInterval(interval); };
     }, [intervalDuration, words.length]);
     var textColor = textColors ? textColors[activeIndex % textColors.length] : undefined;
+    var mediaQueryKey = textSizes && Object.keys(textSizes).find(function (key) { return window.matchMedia("(".concat(key, ")")).matches; });
+    var textSize = textSizes && mediaQueryKey && textSizes[mediaQueryKey];
     return (react_1.default.createElement("div", { className: "inline-flex overflow-hidden transition-all duration-500" },
         react_1.default.createElement("span", { className: "w-[100px]s w-auto text-center ".concat(textSize ? "text-".concat(textSize) : "", " ").concat(textColor ? "text-".concat(textColor) : "", " transition-all duration-500") },
             react_1.default.createElement(framer_motion_1.AnimatePresence, { mode: "wait" },

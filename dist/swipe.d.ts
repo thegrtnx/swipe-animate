@@ -2,7 +2,9 @@ import React from "react";
 interface SwipeProps {
     words: string[];
     intervalDuration?: number;
-    textSize?: string;
+    textSizes?: {
+        [key: string]: string;
+    };
     textColors?: string[];
 }
 declare const Swipe: React.FC<SwipeProps>;
