@@ -19,7 +19,7 @@ const Swipe: React.FC<SwipeProps> = ({ words, intervalDuration = 4000 }) => {
 
 	return (
 		<div className="inline-flex overflow-hidden transition-all duration-500">
-			<span className="w-[100px]s w-auto text-center lg:w-60s lg:text-5xl text-green-500 transition-all duration-500">
+			<span className="w-[100px]s w-auto text-center transition-all duration-500">
 				<AnimatePresence mode="wait">
 					<motion.div
 						key={activeIndex}
