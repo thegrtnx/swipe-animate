@@ -5,10 +5,10 @@ interface SwipeProps {
 	words: string[];
 	intervalDuration?: number;
 	textSize?: string;
-	textColor?: string;
+	textColors?: string[];
 }
 
-const Swipe: React.FC<SwipeProps> = ({ words, intervalDuration, textSize, textColor }) => {
+const Swipe: React.FC<SwipeProps> = ({ words, intervalDuration, textSize, textColors }) => {
 	const [activeIndex, setActiveIndex] = useState(0);
 
 	useEffect(() => {
@@ -19,9 +19,11 @@ const Swipe: React.FC<SwipeProps> = ({ words, intervalDuration, textSize, textCo
 		return () => clearInterval(interval);
 	}, [intervalDuration, words.length]);
 
+	const textColor = textColors ? textColors[activeIndex % textColors.length] : undefined;
+
 	return (
 		<div className="inline-flex overflow-hidden transition-all duration-500">
-			<span className={`w-[100px]s w-auto text-center text-${textSize} text-${textColor} transition-all duration-500`}>
+			<span className={`w-[100px]s w-auto text-center ${textSize ? `text-${textSize}` : ""} ${textColor ? `text-${textColor}` : ""} transition-all duration-500`}>
 				<AnimatePresence mode="wait">
 					<motion.div
 						key={activeIndex}

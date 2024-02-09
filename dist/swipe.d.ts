@@ -3,7 +3,7 @@ interface SwipeProps {
     words: string[];
     intervalDuration?: number;
     textSize?: string;
-    textColor?: string;
+    textColors?: string[];
 }
 declare const Swipe: React.FC<SwipeProps>;
 export default Swipe;

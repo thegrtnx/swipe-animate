@@ -39,7 +39,7 @@ const page = () => {
 				words={arrayOfWords}
 				intervalDuration={4000}
 				textSize="3xl"
-				textColor="blue-500"
+				textColors={["green-400", "blue-500", "red-600"]}
 			/>
 		</div>
 	);
@@ -65,7 +65,7 @@ const page = () => {
 				words={arrayOfWords}
 				intervalDuration={4000}
 				textSize="3xl"
-				textColor="blue-500"
+				textColors={["green-400", "blue-500", "red-600"]}
 			/>
 		</div>
 	);
