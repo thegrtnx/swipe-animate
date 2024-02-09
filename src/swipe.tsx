@@ -4,11 +4,11 @@ import { motion, AnimatePresence } from "framer-motion";
 interface SwipeProps {
 	words: string[];
 	intervalDuration?: number;
-	textSizes?: { [key: string]: string };
+	textSize?: string;
 	textColors?: string[];
 }
 
-const Swipe: React.FC<SwipeProps> = ({ words, intervalDuration, textSizes, textColors }) => {
+const Swipe: React.FC<SwipeProps> = ({ words, intervalDuration, textSize, textColors }) => {
 	const [activeIndex, setActiveIndex] = useState(0);
 
 	useEffect(() => {
@@ -20,13 +20,10 @@ const Swipe: React.FC<SwipeProps> = ({ words, intervalDuration, textSizes, textC
 	}, [intervalDuration, words.length]);
 
 	const textColor = textColors ? textColors[activeIndex % textColors.length] : undefined;
-	const mediaQueryKey: string | undefined = textSizes && Object.keys(textSizes).find((key) => window.matchMedia(`(${key})`).matches);
-
-	const textSize: string | undefined = textSizes && mediaQueryKey && textSizes[mediaQueryKey];
 
 	return (
 		<div className="inline-flex overflow-hidden transition-all duration-500">
-			<span className={`w-[100px]s w-auto text-center ${textSize ? `text-${textSize}` : ""} ${textColor ? `text-${textColor}` : ""} transition-all duration-500`}>
+			<span className={`w-[100px]s w-auto text-center ${textSize} text-${textColor} transition-all duration-500`}>
 				<AnimatePresence mode="wait">
 					<motion.div
 						key={activeIndex}

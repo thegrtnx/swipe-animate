@@ -32,17 +32,14 @@ import { Swipe } from "swipe-animate";
 const page = () => {
 	const arrayOfWords: string[] = ["Awesome!", "Genius!", "Intelligent!", "Prodigy!", "Him!", "Amazing!", "Terrific!", "Broke!"];
 
-	const textSizes = { lg: "5xl", sm: "3xl", xs: "2xl" };
-
-	const textColors = ["green-400", "blue-500", "red-600"];
-
 	return (
 		<div>
+			{" "}
 			<Swipe
 				words={arrayOfWords}
 				intervalDuration={4000}
-				textSizes={textSizes}
-				textColors={textColors}
+				textSize="3xl"
+				textColors={["green-400", "blue-500", "red-600"]}
 			/>
 		</div>
 	);
@@ -61,17 +58,14 @@ import { Swipe } from "swipe-animate";
 const page = () => {
 	const arrayOfWords: string[] = ["Awesome!", "Genius!", "Intelligent!", "Prodigy!", "Him!", "Amazing!", "Terrific!", "Broke!"];
 
-	const textSizes = { lg: "5xl", sm: "3xl", xs: "2xl" };
-
-	const textColors = ["green-400", "blue-500", "red-600"];
-
 	return (
 		<div>
+			{" "}
 			<Swipe
 				words={arrayOfWords}
 				intervalDuration={4000}
-				textSizes={textSizes}
-				textColors={textColors}
+				textSize="3xl"
+				textColors={["green-400", "blue-500", "red-600"]}
 			/>
 		</div>
 	);
